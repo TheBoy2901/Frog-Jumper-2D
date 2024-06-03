@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=3 uid="uid://bwnf5j60jlip5"]
 
-[ext_resource type="Texture2D" uid="uid://ro43qakcltau" path="res://Green.png" id="1_qwb2e"]
-[ext_resource type="Texture2D" uid="uid://b3ocsatnpxqq6" path="res://Terrain (16x16).png" id="2_qytx0"]
+[ext_resource type="Texture2D" uid="uid://ro43qakcltau" path="res://Pictures/Green.png" id="1_qwb2e"]
+[ext_resource type="Texture2D" uid="uid://b3ocsatnpxqq6" path="res://Pictures/Terrain (16x16).png" id="2_qytx0"]
 [ext_resource type="PackedScene" uid="uid://cis3vu5aocrch" path="res://Scenes/main_character.tscn" id="3_ypkdx"]
 [ext_resource type="PackedScene" uid="uid://bfujlpfoutn5k" path="res://Scenes/collectables.tscn" id="4_yp5nv"]
 [ext_resource type="Script" path="res://Scenes/main_character2.gd" id="5_t8x8k"]
-[ext_resource type="Script" path="res://game_manager.gd" id="5_xmobw"]
+[ext_resource type="Script" path="res://Scenes/game_manager.gd" id="5_xmobw"]
 [ext_resource type="PackedScene" uid="uid://gwveajri84og" path="res://Scenes/finish.tscn" id="6_honj8"]
 [ext_resource type="PackedScene" uid="uid://cv8k2hvtbtrci" path="res://Scenes/Level2.tscn" id="7_fx4dl"]
 
