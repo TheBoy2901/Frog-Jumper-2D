@@ -16,6 +16,9 @@ func _physics_process(delta):
 	else:
 		sprite_2d.animation = "idle"
 	
+	if Input.is_action_just_pressed("pauze"):
+		get_tree().change_scene_to_file("res://Scenes/pauze_menu.tscn")
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta

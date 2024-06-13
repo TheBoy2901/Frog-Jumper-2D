@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://psc4nbitxgnh"]
+
+[ext_resource type="Script" path="res://Scenes/pauze_menu.gd" id="1_vh4vd"]
+[ext_resource type="Texture2D" uid="uid://crryfok2jpisk" path="res://Pictures/Brown.png" id="2_dah0y"]
+[ext_resource type="Texture2D" uid="uid://c5qdc1qrgwc52" path="res://Pictures/Frog Jumper 2D logo.jpg" id="3_srg3s"]
+
+[node name="pauze_menu" type="Node"]
+script = ExtResource("1_vh4vd")
+
+[node name="Backround" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_dah0y")
+stretch_mode = 1
+
+[node name="Logo" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -266.0
+offset_right = 175.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_srg3s")
+
+[node name="Resart" type="Button" parent="."]
+offset_left = 297.0
+offset_top = 457.0
+offset_right = 508.0
+offset_bottom = 538.0
+theme_override_font_sizes/font_size = 30
+text = "Restart"
+
+[node name="Main Menu" type="Button" parent="."]
+offset_left = 651.0
+offset_top = 457.0
+offset_right = 862.0
+offset_bottom = 538.0
+theme_override_font_sizes/font_size = 30
+text = "Main Menu"
+
+[connection signal="pressed" from="Resart" to="." method="_on_resart_pressed"]
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
