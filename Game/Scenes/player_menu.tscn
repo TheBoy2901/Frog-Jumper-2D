@@ -47,5 +47,14 @@ offset_bottom = 498.0
 theme_override_font_sizes/font_size = 30
 text = "2 Players"
 
+[node name="Quit" type="Button" parent="."]
+offset_left = 1048.0
+offset_top = 18.0
+offset_right = 1135.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
 [connection signal="pressed" from="1 Player" to="." method="_on__player_pressed"]
 [connection signal="pressed" from="2 Players" to="." method="_on__players_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
