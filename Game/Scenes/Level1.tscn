@@ -1,5 +1,4 @@
 [gd_scene load_steps=16 format=3 uid="uid://bwnf5j60jlip5"]
-
 [ext_resource type="Texture2D" uid="uid://ro43qakcltau" path="res://Green.png" id="1_qwb2e"]
 [ext_resource type="Texture2D" uid="uid://b3ocsatnpxqq6" path="res://Terrain (16x16).png" id="2_qytx0"]
 [ext_resource type="PackedScene" uid="uid://cis3vu5aocrch" path="res://Scenes/main_character.tscn" id="3_ypkdx"]
@@ -638,6 +637,7 @@ position = Vector2(1753, -100)
 [node name="Finish" parent="SceneObjects" instance=ExtResource("6_honj8")]
 position = Vector2(1724, 563)
 target_level = ExtResource("7_fx4dl")
+collectables = PackedInt32Array(12, 11)
 
 [node name="RigidBody2D" type="RigidBody2D" parent="SceneObjects"]
 position = Vector2(1616, 413)
