@@ -44,7 +44,8 @@ offset_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 1"
+text = "Level 3
+"
 
 [node name="Level2" type="Button" parent="."]
 anchors_preset = 8
@@ -59,16 +60,7 @@ offset_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 30
-text = "Level 2"
-
-[node name="Back" type="Button" parent="."]
-offset_left = 1048.0
-offset_top = 18.0
-offset_right = 1135.0
-offset_bottom = 68.0
-theme_override_font_sizes/font_size = 30
-text = "Back"
+text = "Level 4"
 
 [connection signal="pressed" from="Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="Level2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

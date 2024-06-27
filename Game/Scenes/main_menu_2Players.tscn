@@ -1,11 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cffls006lu10r"]
+[gd_scene load_steps=3 format=3 uid="uid://cffls006lu10r"]
 
-[ext_resource type="Script" path="res://Scenes/main_menu_2Players.gd" id="1_40jpw"]
 [ext_resource type="Texture2D" uid="uid://crryfok2jpisk" path="res://Pictures/Brown.png" id="1_i631y"]
 [ext_resource type="Texture2D" uid="uid://c5qdc1qrgwc52" path="res://Pictures/Frog Jumper 2D logo.jpg" id="2_mtr6t"]
 
 [node name="MainMenu2Player" type="Node"]
-script = ExtResource("1_40jpw")
 
 [node name="Backround" type="TextureRect" parent="."]
 texture_filter = 1
@@ -30,13 +28,3 @@ offset_bottom = 85.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_mtr6t")
-
-[node name="Back" type="Button" parent="."]
-offset_left = 1048.0
-offset_top = 18.0
-offset_right = 1135.0
-offset_bottom = 68.0
-theme_override_font_sizes/font_size = 30
-text = "Back"
-
-[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
