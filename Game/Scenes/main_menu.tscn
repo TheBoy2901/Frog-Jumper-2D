@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://eu0a32knomup"]
 
+[ext_resource type="Texture2D" uid="uid://c5qdc1qrgwc52" path="res://Frog Jumper 2D logo.jpg" id="1_421k2"]
 [ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_bhh34"]
-[ext_resource type="Texture2D" uid="uid://crryfok2jpisk" path="res://Brown.png" id="2_d7e7e"]
-[ext_resource type="Texture2D" uid="uid://c5qdc1qrgwc52" path="res://Frog Jumper 2D logo.jpg" id="3_vphbr"]
+[ext_resource type="Texture2D" uid="uid://crryfok2jpisk" path="res://Brown.png" id="1_lawag"]
 
 [node name="MainMenu" type="Node"]
 script = ExtResource("1_bhh34")
@@ -14,7 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_d7e7e")
+texture = ExtResource("1_lawag")
 stretch_mode = 1
 
 [node name="Logo" type="TextureRect" parent="."]
@@ -29,7 +29,7 @@ offset_right = 175.0
 offset_bottom = 85.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_vphbr")
+texture = ExtResource("1_421k2")
 
 [node name="Level1" type="Button" parent="."]
 anchors_preset = 8
