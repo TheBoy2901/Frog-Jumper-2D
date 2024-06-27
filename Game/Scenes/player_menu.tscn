@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://crryfok2jpisk" path="res://Pictures/Brown.png" id="1_2b3mp"]
 [ext_resource type="Script" path="res://Scenes/player_menu.gd" id="1_bw67o"]
-[ext_resource type="Texture2D" uid="uid://c5qdc1qrgwc52" path="res://Pictures/Frog Jumper 2D logo.jpg" id="2_vwugl"]
+[ext_resource type="Texture2D" uid="uid://c5qdc1qrgwc52" path="res://Frog Jumper 2D logo.jpg" id="2_vwugl"]
 
 [node name="PlayerMenu" type="Node"]
 script = ExtResource("1_bw67o")
@@ -47,14 +47,5 @@ offset_bottom = 498.0
 theme_override_font_sizes/font_size = 30
 text = "2 Players"
 
-[node name="Quit" type="Button" parent="."]
-offset_left = 1048.0
-offset_top = 18.0
-offset_right = 1135.0
-offset_bottom = 68.0
-theme_override_font_sizes/font_size = 30
-text = "Quit"
-
 [connection signal="pressed" from="1 Player" to="." method="_on__player_pressed"]
 [connection signal="pressed" from="2 Players" to="." method="_on__players_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
